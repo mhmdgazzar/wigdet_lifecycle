@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wigdet_lifecycle/features/main_screen/presentation/main_screen.dart';
+import 'package:wigdet_lifecycle/src/features/main_screen/presentation/main_screen.dart';
 
 class App extends StatelessWidget {
   const App({super.key});

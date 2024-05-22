@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wigdet_lifecycle/features/app.dart';
+import 'package:wigdet_lifecycle/src/app.dart';
 
 void main() {
   runApp(const MainApp());
