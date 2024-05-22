@@ -13,13 +13,13 @@ class _MainScreenState extends State<MainScreen> {
   @override
   void initState() {
     // TODO: implement initState
-    print('.... initstate ...');
+    debugPrint('.... initstate ...');
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    print('.... Build ....');
+    debugPrint('.... Build ....');
     return Scaffold(
       body: Center(
         child: Column(
@@ -36,10 +36,10 @@ class _MainScreenState extends State<MainScreen> {
             OutlinedButton(
               onPressed: () {
                 setState(() {
-                  print('.... setstate ....');
-                  print('.... Button pressed ....');
+                  debugPrint('.... setstate ....');
+                  debugPrint('.... Button pressed ....');
                   x = x + 1;
-                  print('x incrementiert');
+                  debugPrint('x incrementiert');
                 });
               },
               child: const Text('Do it!'),
@@ -53,11 +53,11 @@ class _MainScreenState extends State<MainScreen> {
   @override
   void dispose() {
     // TODO: implement dispose
-    print(".... Dispose ....");
+    debugPrint(".... Dispose ....");
     setState(() {
-      print('.... Dispose called ....');
+      debugPrint('.... Dispose called ....');
       x = 0;
-      print('x auf 0 gesetzt');
+      debugPrint('x auf 0 gesetzt');
     });
     super.dispose();
   }
